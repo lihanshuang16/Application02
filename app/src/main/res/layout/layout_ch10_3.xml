@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="cn.edu.sdwu.android02.classroom.sn170507180116.Ch10Activity3">
+
+    <EditText
+        android:id="@+id/ch10_3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50dp"
+        android:onClick="cancel"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintRight_toLeftOf="@+id/guideline4" />
+
+<android.support.constraint.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/guideline"
+    app:layout_constraintGuide_begin="16dp"
+    android:orientation="vertical" />
+
+<android.support.constraint.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/guideline2"
+    app:layout_constraintGuide_begin="20dp"
+    android:orientation="horizontal" />
+
+<android.support.constraint.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/guideline3"
+    app:layout_constraintGuide_begin="197dp"
+    android:orientation="horizontal" />
+
+<android.support.constraint.Guideline
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/guideline4"
+    app:layout_constraintGuide_begin="367dp"
+    android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:onClick="ok"
+        android:text="OK"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3" />
+
+</android.support.constraint.ConstraintLayout>
