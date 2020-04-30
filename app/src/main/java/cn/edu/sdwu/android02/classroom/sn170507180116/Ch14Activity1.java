@@ -93,7 +93,7 @@ public class Ch14Activity1 extends AppCompatActivity {
             sqLiteDatabase.beginTransaction();//开启事务
 
             ContentValues contentValues = new ContentValues();
-            contentValues.put("stutel", "199999999");
+            contentValues.put("stutel", "1777777777");
             sqLiteDatabase.update("student", contentValues, "id=?", new String[]{"2"});
             sqLiteDatabase.setTransactionSuccessful();//所有操作结束后，调用此方法才会将数据真正保存到数据库里
 

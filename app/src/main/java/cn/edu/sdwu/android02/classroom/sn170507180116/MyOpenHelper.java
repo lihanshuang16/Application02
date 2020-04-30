@@ -11,7 +11,7 @@ import android.util.Log;
 public class MyOpenHelper extends SQLiteOpenHelper {
     private String STUDENT_TB_SQL="create table student(id integer primary key autoincrement,stuname text,stutel text)";
     public MyOpenHelper(Context context){
-        super(context,"stud.db",null,1);
+        super(context,"stud.db",null,2);
     }
 
     @Override
@@ -25,6 +25,7 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+      //当构造方法中指定的版本号，与手机中已有的数据库的版本号更新的时候，调用本方法
+        sqLiteDatabase.execSQL("alter table student add column stuadd text");
     }
 }
